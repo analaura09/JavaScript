@@ -2,9 +2,30 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(86, 117, 216);
+            color: blanchedalmond;
+            font: normal 18pt Arial;
+        }
+    </style>
 </head>
 <body>
-
+    <h1>iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>aprendendo a usar <strong>DOM</strong> com JavaScript</p>
+    <div class ="msg">clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = "green"
+        d.innerText ="estou aguardando..."
+        */
+       var d = window.document.querySelector('div.msg')
+       d.style.color = 'blue'
+    </script>
 </body>
 </html>
