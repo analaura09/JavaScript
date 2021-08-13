@@ -8,19 +8,19 @@
 </head>
 <body>
     <h1>Sistema de reconhecimento de nacionalidade</h1>
-    Seu País é: <input type="text" name="pais" id="pais">
+    Seu País é: <input type="text" name="txtp" id="txtp">
     <input type="button" value="verificar" onclick="analisar()">
     <div id='res'>
 
     </div>
     <script>
         function analisar(){
-            var pais = window.document.querySelector('input#pais')
+            var txtp = window.document.querySelector('input#txtp')
             var res = window.document.querySelector('div#res')
-            //var
-            res.innerHTML=`<p>Você é natural de ${pais} </p>`
-            if (pais == 'Brasil'){
-                pais.innerHTML += `<p> Você é <strong>Brasileiro</strong> :)</p>`
+            var pa = txtp
+            res.innerHTML=`<p>Você é natural de ${pa} </p>`
+            if (pa == 'Brasil'){
+                res.innerHTML += `<p> Você é <strong>Brasileiro</strong> :)</p>`
             }
             else{
                 res.innerHTML += `<p> Você é <strong>estrangeiro</strong> ;)</p>`
