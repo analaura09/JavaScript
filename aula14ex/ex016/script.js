@@ -13,7 +13,8 @@ function contar(){
         var p = Number(pa.value)
 
         for (var c = i; c <= f; c+=p){
-            res.innerHTML += `${c} \u{1F603} `
+            res.innerHTML += ` ${c} \u{1F603} `
         }
+        res.innerHTML
     }
 }
